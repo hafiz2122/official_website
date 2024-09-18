@@ -26,18 +26,10 @@ Run this command in vs code terminal or cmd if on mac terminal
 ```bash
 git clone https://github.com/yourusername/official_website.git
 cd official_website
-npm install
-```
 
+```
 
 ## Usage
-To run the project locally, use the following command:
-
-```bash
-npm start
-```
-
-This will start a local development server. Open your browser and navigate to `http://localhost:3000` to view the website.
 
 ## Contributing
 We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
