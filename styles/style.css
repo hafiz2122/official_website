@@ -293,7 +293,7 @@ li a:hover{
 .close {
     color: #333;
     float: right;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: normal;
     padding: 5px;
     transition: color 0.3s;
@@ -312,6 +312,7 @@ li a:hover{
     justify-content: flex-start; /* Align items to the left */
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .tab button {
@@ -324,6 +325,7 @@ li a:hover{
     color: #555;
     transition: color 0.3s ease, background-color 0.3s ease;
     position: relative;
+    margin-right: 10px; /* Add space between tabs */
 }
 
 /* Divider between tabs with spacing */
@@ -334,7 +336,8 @@ li a:hover{
     top: 10%;
     height: 80%;
     width: 1px;
-    background-color: #ddd; /* Divider color */
+    background-color: #000000; /* Divider color */
+    margin-right: 3px; /* Add space between the tab and the divider */
 }
 
 /* Hover effects */
@@ -346,6 +349,7 @@ li a:hover{
 .tab button.active {
     border-bottom: 2px solid #333;
     font-weight: bold;
+    
 }
 
 /* Tab content */
