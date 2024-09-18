@@ -29,8 +29,6 @@ cd official_website
 
 ```
 
-## Usage
-
 ## Contributing
 We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
 
