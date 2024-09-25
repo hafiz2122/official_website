@@ -35,3 +35,13 @@ window.onclick = function(event) {
         closePopup();
     }
 }
+
+// hamburger menu
+function toggleMenu(){
+    var nav = document.querySelector('.nav-items');
+    if(nav.style.display ==='none'){
+        nav.style.display = 'block';
+    }else{
+        nav.style.display = 'none';
+    }
+}

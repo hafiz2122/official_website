@@ -402,7 +402,27 @@ li a:hover{
     background-color: #555;
 }
 
-
+/* Hambuger Menu for Navigation */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index:1000;
+}
+.hamburger-menu div{
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #333;
+}
+.hamburger-menu .line{
+    width: 20px;
+    height: 2px;
+    color: white;
+    background-color: #333;
+    margin: 5px;
+}
 
 /* Footer */
 footer{
@@ -421,10 +441,14 @@ footer{
     .popup-content {
         width: 95%; /* Adjust width for smaller screens */
     }
-    
+    .hamburger-menu {
+        display: flex; /* Display the hamburger menu */
+    }
     .topnav {
-        flex-direction: column; /* Stack items vertically */
-        padding-left: 0; /* Remove left padding */
+       display: flex;
+    }
+    .nav-items {
+        display: none; /* Hide the navigation items */
     }
     .useraccess {
         padding-right: 0; /* Remove right padding */
