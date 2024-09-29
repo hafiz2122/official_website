@@ -442,13 +442,28 @@ footer{
         width: 95%; /* Adjust width for smaller screens */
     }
     .hamburger-menu {
-        display: flex; /* Display the hamburger menu */
+        display: block ; /* Display the hamburger menu */
+    }
+    .hamburger-menu div{
+        width: 2rem;
+        height: 0.25rem;
+        background-color: #333;
+    }   
+    .hamburger-menu .line{
+        width: 20px;
+        height: 2px;
+        color: white;
+        background-color: #333;
+        margin: 5px;
     }
     .topnav {
        display: flex;
     }
     .nav-items {
         display: none; /* Hide the navigation items */
+    }
+    .nav-items.active {
+        display: block; /* Display the navigation items */
     }
     .useraccess {
         padding-right: 0; /* Remove right padding */

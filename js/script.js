@@ -39,9 +39,5 @@ window.onclick = function(event) {
 // hamburger menu
 function toggleMenu(){
     var nav = document.querySelector('.nav-items');
-    if(nav.style.display ==='none'){
-        nav.style.display = 'block';
-    }else{
-        nav.style.display = 'none';
-    }
+    element.classList.toggle('active');
 }
