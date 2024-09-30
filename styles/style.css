@@ -14,7 +14,7 @@ body{
 /* Navigation bar */
 /* Navigation bar */
 .topnav {
-    background-color: #333;
+    background-color: #918f8f;
     overflow: hidden;
     align-items: center;
     padding-left: 75px;
@@ -405,25 +405,23 @@ li a:hover{
 /* Hambuger Menu for Navigation */
 .hamburger-menu {
     display: none;
+    
     position: absolute;
-    top: 20px;
-    right: 20px;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     z-index:1000;
 }
-.hamburger-menu div{
+.hamburger-menu .line {
     width: 2rem;
     height: 0.25rem;
-    background-color: #333;
+    background-color: #fff; /* Change this to a color that stands out */
 }
-.hamburger-menu .line{
-    width: 20px;
-    height: 2px;
-    color: white;
-    background-color: #333;
-    margin: 5px;
+.active {
+    opacity: 0;
+    
 }
-
 /* Footer */
 footer{
     background-color: #333;
@@ -437,12 +435,68 @@ footer{
 }
 
 /* Responsive Design */
+
+@media (max-width: 1024) {
+    .popup-content {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+    .hamburger-menu {
+        display: flex ; /* Display the hamburger menu */
+        color: white;
+    }
+    .hamburger-menu div{
+        width: 2rem;
+        height: 0.25rem;
+        color: white;
+        text-align: right;
+    }
+    
+    .hamburger-menu .line{
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+      
+    }
+    .topnav {
+       display: flex;
+    }
+    .nav-items {
+        display: none; /* Hide the navigation items */
+    }
+    .nav-items.active {
+        display: block; /* Display the navigation items */
+    }
+    .useraccess {
+        padding-right: 0; /* Remove right padding */
+        margin-left: 0; /* Remove left margin */
+    }
+    .hero-text {
+        padding-top: 150px; /* Adjust padding for smaller screens */
+    }
+    .contact-form-container,
+    .register-form,
+    .login-form {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+    .tab button {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .tabcontent {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    .footer {
+        position: relative; /* Change position for smaller screens */
+    }
+}
+
+
 @media (max-width: 768px) {
     .popup-content {
         width: 95%; /* Adjust width for smaller screens */
     }
     .hamburger-menu {
-        display: block ; /* Display the hamburger menu */
+        display: flex ; /* Display the hamburger menu */
     }
     .hamburger-menu div{
         width: 2rem;
