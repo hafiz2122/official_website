@@ -11,10 +11,11 @@ body{
     padding: 0;
 }
 
-/* Navigation bar */
+/* -------------- Header ---------- */
+
 /* Navigation bar */
 .topnav {
-    background-color: #918f8f;
+    background-color: #292929;
     overflow: hidden;
     align-items: center;
     padding-left: 75px;
@@ -73,9 +74,35 @@ li a:hover{
     margin-left:auto;
     padding-right: 500px;
 }
+
+/* Hambuger Menu for Navigation */
+.hamburger-menu {
+    display: none;
+    
+    position: relative;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index:1000;
+    
+}
+.hamburger-menu:hover .line {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff; /* Change this to a color that stands out */
+}
+
+.active {
+    opacity: 0;
+    
+}
+
+
 /* End of Navigation bar */
 
-/* Main content */
+/*--------- Main content ------------*/
+
 /* Hero-Image and Text */
 
 .hero-image1{
@@ -402,26 +429,6 @@ li a:hover{
     background-color: #555;
 }
 
-/* Hambuger Menu for Navigation */
-.hamburger-menu {
-    display: none;
-    
-    position: absolute;
-    flex-direction: column;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    z-index:1000;
-}
-.hamburger-menu .line {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: #fff; /* Change this to a color that stands out */
-}
-.active {
-    opacity: 0;
-    
-}
 /* Footer */
 footer{
     background-color: #333;
@@ -447,7 +454,7 @@ footer{
     .hamburger-menu div{
         width: 2rem;
         height: 0.25rem;
-        color: white;
+        background-color: white;
         text-align: right;
     }
     
@@ -457,6 +464,9 @@ footer{
         background-color: white;
         margin: 6px 0;
       
+    }
+    .hamburger-menu:hover .line {
+        background-color: #ffffff; /* Change this to a color that stands out */
     }
     .topnav {
        display: flex;
